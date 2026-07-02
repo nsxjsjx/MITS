@@ -1,7 +1,16 @@
-1. 安装库文件
+# MITS
 
-2. preprocess/souce_to_bert.py 运行 
-   将源代码使用graphcodebert提取特征
+This repository provides the source code for the paper:
 
-3. bytecode_to_graph/main.py 运行
-   将字节码转为pyg图的数据格式并存储
+**Token-Aware Multi-Modal Learning for Smart Contract Vulnerability Detection**
+
+MITS is a multi-modal framework for smart contract vulnerability detection. It integrates bytecode-level representations, inferred source-level semantic features, sequential patterns, and graph structures, and uses Conv1D-based intra-node token sequence modeling to enhance node representations.
+
+## Requirements
+
+The code was developed with Python 3.x.
+
+Install dependencies with:
+
+```bash
+pip install -r requirements_mits.txt
