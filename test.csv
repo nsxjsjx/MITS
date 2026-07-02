@@ -1,0 +1,15 @@
+节点类型,描述
+ENTRY_POINT,函数入口点
+IF,分支条件
+RETURN,返回值
+END_IF,分支结束
+NEW VARIABLE,函数中定义的新变量
+EXPRESSION,表达式
+EXECUTION_POINT,自定义修饰符中的占位符，表示函数执行位置
+INLINE ASM,内联汇编
+BEGIN_LOOP,循环入口
+IF_LOOP,循环条件
+END_LOOP,循环结束
+CONTINUE,跳过当前循环剩余部分，进入下一次迭代
+LOCAL VARIABLE,函数参数
+STATE VARIABLE,合约状态变量

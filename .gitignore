@@ -1,0 +1,36 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE
+.idea/
+.vscode/
+
+# Environment
+venv/
+.venv/
+env/
+
+# Data and large files
+dataset/
+data/raw/
+data/processed/
+model_save/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.joblib
+
+# Results and temporary outputs
+results/
+plots/
+*.log
+*.tmp
+
+# System files
+.DS_Store
+Thumbs.db
