@@ -1,0 +1,11 @@
+{
+  "id": "MITS-final-pooling-validation-20261112-v1",
+  "tasks": ["reentrancy", "timestamp", "integeroverflow", "delegatecall"],
+  "seeds": [17, 29, 43, 71, 101],
+  "variants": ["selected_encoder", "mean", "max", "median", "sum"],
+  "expected_records": 100,
+  "reused_selected_records": 20,
+  "new_training_runs": 80,
+  "selection": "validation positive-class F1 only; earliest checkpoint on ties",
+  "test_rule": "TEST loading is forbidden in this experiment"
+}

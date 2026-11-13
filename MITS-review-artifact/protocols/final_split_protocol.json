@@ -1,0 +1,22 @@
+{
+  "seed": 20261010,
+  "desired_ratio": [0.7, 0.15, 0.15],
+  "algorithm": "Preserve grouped-stratification assignments after label-evidence quarantine; no rerandomization or score-based selection",
+  "parent_protocol_sha256": "dcdb8565ee5cf5775ec5c48d80379140feb828ca78afca72e4e78c385664e7c9",
+  "group_count": 1418,
+  "stats": [
+    {"task": "reentrancy", "split": "train", "total": 345, "positive": 111, "negative": 234},
+    {"task": "reentrancy", "split": "validation", "total": 74, "positive": 24, "negative": 50},
+    {"task": "reentrancy", "split": "test", "total": 74, "positive": 24, "negative": 50},
+    {"task": "timestamp", "split": "train", "total": 362, "positive": 208, "negative": 154},
+    {"task": "timestamp", "split": "validation", "total": 77, "positive": 44, "negative": 33},
+    {"task": "timestamp", "split": "test", "total": 77, "positive": 44, "negative": 33},
+    {"task": "integeroverflow", "split": "train", "total": 410, "positive": 166, "negative": 244},
+    {"task": "integeroverflow", "split": "validation", "total": 88, "positive": 35, "negative": 53},
+    {"task": "integeroverflow", "split": "test", "total": 88, "positive": 35, "negative": 53},
+    {"task": "delegatecall", "split": "train", "total": 159, "positive": 57, "negative": 102},
+    {"task": "delegatecall", "split": "validation", "total": 34, "positive": 12, "negative": 22},
+    {"task": "delegatecall", "split": "test", "total": 32, "positive": 10, "negative": 22}
+  ],
+  "training_only_policy": "SFT-derived records and connected groups remain training-only"
+}

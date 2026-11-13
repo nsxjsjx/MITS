@@ -1,0 +1,12 @@
+{
+  "id": "MITS-final-kernel-validation-20261112-v1",
+  "tasks": ["reentrancy", "integeroverflow", "delegatecall"],
+  "timestamp": "N/A: retained final encoder is BiGRU",
+  "seeds": [17, 29, 43, 71, 101],
+  "kernels": [2, 3, 4, 5],
+  "expected_records": 60,
+  "reused_selected_records": 15,
+  "new_training_runs": 45,
+  "selection": "validation positive-class F1 only; earliest checkpoint on ties",
+  "test_rule": "TEST loading is forbidden in this experiment"
+}

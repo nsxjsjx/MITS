@@ -1,0 +1,24 @@
+{
+  "id": "MITS-final-configuration-ablation-20261112-v1",
+  "tasks": ["reentrancy", "timestamp", "integeroverflow", "delegatecall"],
+  "seeds": [17, 29, 43, 71, 101],
+  "variants": ["full", "no_graph", "no_direct_sequence", "no_derived", "no_kd"],
+  "new_training_runs": 55,
+  "reused_full_runs": 20,
+  "reused_no_kd_runs": 20,
+  "overflow_complete_family": "checkpoints/final/integeroverflow",
+  "overflow_no_kd_family": "checkpoints/no_kd/integeroverflow",
+  "overflow_training_protocol": "original normal-batch trainer retained by the paper",
+  "selection": "validation F1 only; earliest checkpoint on ties",
+  "test_rule": "freeze every predeclared checkpoint hash before one test evaluation; no test-based selection",
+  "delegatecall_no_derived": "not applicable because the selected full delegatecall student already omits the derived branch",
+  "project_code_sha256": {
+    "revision/model.py": "da6a77c687b8efd6a88f9bbe13726f235c18242636ade5868e8a6a44071149ab",
+    "revision/train.py": "e2331a812619632ecdef76c6ebd5de6a06695bf185c67989d2fdb5b8c286f891",
+    "revision/distillation.py": "2006473016c3fa8bf7ad1f9699220833ef1fc73f2b3134b3cecf01d73af65a6c",
+    "revision/data.py": "f832cea3df7353bada7962a7dd5b5a4f9c3ed6b8eee51ee09d9d3a2c8507a806",
+    "revision/config.py": "105a9496445b354895bac18ccf93d36bdb5507923c3a8a9490c6043c27e55dc9",
+    "revision/metrics.py": "681b0217c557137640279a7bfc08fceea793be4b22b6266ea99cad51d9e71712",
+    "utils/bytecode_to_token.py": "2e7478ec7b355facae306b051d884faea87757d0bc97d67cb2884d0a804997e9"
+  }
+}
